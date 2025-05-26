@@ -16,7 +16,7 @@ document.getElementById('formulario').addEventListener('submit', async e => {
   await fetch('/api/usuarios', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ nombre, email, telefono })
+    body: JSON.stringify({ nombre, email, telefono})
   });
   cargarUsuarios();
   e.target.reset();
